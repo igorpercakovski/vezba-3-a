@@ -1,0 +1,11 @@
+Tretata vezba si sostoi od dva dela od koi prviot e da se generira fajl where index is even.
+Isto i kako rpethodnata namesto vo CSV fajlot gi zacuvav vo XLS bidejki isto imav problem so header.
+
+1. Stavame file reader za da go prikacime fajlot
+2.Snap Exel parser za da go obrabotime fajlot
+3. Snap Filter za da gi dobieme samo kontaktite so index EVEn.
+ZA taa cel gi filtrirav po kolonata NAme so komandata $Name.endsWith("0"),
+bidejki podocna vidov deka kolonata se vikala Employee ID, ID bese skrijano i
+mi vrakjase greska deka takva kolona ne postoi.
+4. Snap exel formatter za formatiranje na fajlot vo exel
+5. i na krajot snap file writer za generiranje nov fajl
